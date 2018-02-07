@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ABDEB844-32EF-46FA-B98F-E19568709954}</ProjectGuid>
+    <ProjectGuid>{B99E32F9-C468-404A-9614-C3F4C4D67851}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tarea01_MenuGen</RootNamespace>
-    <AssemblyName>Tarea01_MenuGen</AssemblyName>
+    <RootNamespace>PSuma</RootNamespace>
+    <AssemblyName>PSuma</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,18 +44,22 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Tarea01_MenuGen, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Tarea01_MenuGen\bin\Debug\Tarea01_MenuGen.exe</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MenuGen.cs">
+    <Compile Include="PSuma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuGen.Designer.cs">
-      <DependentUpon>MenuGen.cs</DependentUpon>
+    <Compile Include="PSuma.Designer.cs">
+      <DependentUpon>PSuma.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MenuGen.resx">
-      <DependentUpon>MenuGen.cs</DependentUpon>
+    <EmbeddedResource Include="PSuma.resx">
+      <DependentUpon>PSuma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,14 +84,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Kaktura\Kaktura.csproj">
-      <Project>{17f87025-9c3a-400e-9cc0-b2600ca289ed}</Project>
-      <Name>Kaktura</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PSuma\PSuma.csproj">
-      <Project>{b99e32f9-c468-404a-9614-c3f4c4d67851}</Project>
-      <Name>PSuma</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

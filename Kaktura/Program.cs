@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tarea01_MenuGen
+namespace Kaktura
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Tarea01_MenuGen
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuGen());
+            Application.Run(new Kaktura());
         }
     }
 }
